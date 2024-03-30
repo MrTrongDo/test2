@@ -1,0 +1,50 @@
+.wrapper {
+  width: 80%;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 24px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  min-height: 500px;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.title {
+  color: #062563;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav {
+  margin-left: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  padding-bottom: 6px;
+}
+
+.nav::after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #823d97;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.navActive {
+  color: #823d97;
+}
+
+.nav:hover::after {
+  transform: scaleX(1);
+}
+
+.chartsContent {
+  display: flex;
+  align-items: center;
+}

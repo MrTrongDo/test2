@@ -1,0 +1,46 @@
+.modalHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.modalHeaderTitle {
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  padding-bottom: 8px;
+}
+
+.line {
+  border-bottom: 3px solid #823d97;
+}
+
+.modalFooterLine {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 100%;
+  text-transform: uppercase;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  color: #0d1421;
+}
+
+.modalFooterLine::before,
+.modalFooterLine::after {
+  display: flex;
+  content: '';
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #eff2f5;
+  height: 1px;
+  transform: translateY(0.7rem);
+  flex: 1 1 0%;
+}

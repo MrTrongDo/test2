@@ -1,0 +1,26 @@
+.button {
+  color: #fff;
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+}
+
+.primary {
+  background-size: 200% auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5ab6cc), color-stop(51%, #823d97), to(#5ab6cc));
+  background-image: linear-gradient(to right, #5ab6cc 0%, #823d97 51%, #5ab6cc 100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.primary:hover {
+  background-position: right center;
+}
+
+.text {
+  background-color: unset;
+  border-radius: unset;
+  color: black;
+}
